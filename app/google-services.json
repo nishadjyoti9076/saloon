@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "88281580762",
+    "project_id": "my-salonss-partner",
+    "storage_bucket": "my-salonss-partner.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:88281580762:android:8e6dbc68a141cdc87011e3",
+        "android_client_info": {
+          "package_name": "com.shashank.platform.saloon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "88281580762-6187p1skuf1g4ts742ljdnm90qceum0m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shashank.platform.saloon",
+            "certificate_hash": "893224b954a7b2963486df0ee05de22364962904"
+          }
+        },
+        {
+          "client_id": "88281580762-f5h0vo1bq9iea2bqikv2euqmuhrr2tm9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADfLdUG_ffxjAqy3qtEiyvH5M-ZSe04XQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "88281580762-f5h0vo1bq9iea2bqikv2euqmuhrr2tm9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

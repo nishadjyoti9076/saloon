@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="leaveDataByUserViewModel"
+            type="com.shashank.platform.saloon.viewmodel.ApplyLeaveViewModel" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        style="@style/loginCard"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/loginViewsMargin"
+        android:layout_marginBottom="@dimen/loginViewsMargin"
+        android:background="@color/white"
+        android:elevation="5dp"
+        app:cardCornerRadius="@dimen/loginCardRadius">
+
+
+        <LinearLayout
+            style="@style/linearParent"
+            android:layout_gravity="center"
+            android:padding="@dimen/loginViewsMargin">
+
+            <TextView
+                style="@style/headerTextPrimary"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:text="@string/applyleave"
+                android:textColor="@color/colorAccent" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputEmail"
+                style="@style/parent"
+                android:layout_marginTop="@dimen/loginViewsMargin">
+
+                <EditText
+                    android:id="@+id/ed_subject"
+                    style="@style/modifiedEditText"
+                    android:hint="@string/Subject"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:text="@={leaveDataByUserViewModel.selectedSubject}"
+                    android:textSize="15dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputPassword"
+                style="@style/parent"
+                android:layout_marginTop="@dimen/loginViewsMargin">
+
+                <EditText
+                    android:id="@+id/ed_todate"
+                    style="@style/modifiedEditText"
+                    android:drawableEnd="@drawable/baseline_calendar_today_24"
+                    android:hint="@string/to_date"
+                    android:maxLines="1"
+                    android:text="@={leaveDataByUserViewModel.selectedToDateText}"
+                    android:textSize="15dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parent"
+                android:layout_marginTop="@dimen/loginViewsMargin">
+
+                <EditText
+                    android:id="@+id/ed_fromdate"
+                    style="@style/modifiedEditText"
+                    android:drawableEnd="@drawable/baseline_calendar_today_24"
+                    android:hint="@string/from_date"
+                    android:maxLines="1"
+                    android:text="@={leaveDataByUserViewModel.selectedFromDateText}"
+                    android:textSize="15dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parent"
+                android:layout_marginTop="@dimen/loginViewsMargin">
+
+                <EditText
+                    android:id="@+id/ed_reason"
+                    style="@style/modifiedEditText"
+                    android:hint="@string/reason"
+                    android:text="@={leaveDataByUserViewModel.selectReason}"
+                    android:textSize="15dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/btn_apply"
+                style="@style/loginButton"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+
+                android:text="Apply" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

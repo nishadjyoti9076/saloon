@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#992b84</color>
+    <color name="black">#000</color>
+    <color name="colorPrimaryDark">#992b84</color>
+    <color name="white">#fff</color>
+    <color name="gray">#2d2d2d</color>
+    <color name="colorAccent">#992b84</color>
+    <color name="purple">#992b84</color>
+    <color name="yellow">#ECDE68</color>
+    <color name="bottomNavigationTextColor">#B2B2B2</color>
+    <color name="bottomNavigationTintColor">#B2B2B2</color>
+    <color name="bottomNavigationSelectedColor">#A34290</color>
+    <color name="bottomNavigationBackground">#F7F7F7</color>
+    <color name="statusBarColor">#000</color>
+    <color name="whiteBodyColor">#FCFCFC</color>
+    <color name="darkTextColor">#020000</color>
+    <color name="primaryTextColor">#019AE8</color>
+    <color name="whiteTextColor">#fff</color>
+    <color name="frutorial_title">#4c4c4c</color>
+    <color name="background">#A34290</color>
+
+
+</resources>

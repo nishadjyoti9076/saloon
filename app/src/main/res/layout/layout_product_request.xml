@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <!-- Define any data variables here if needed -->
+        <variable
+            name="productRequestViewModel"
+            type="com.shashank.platform.saloon.viewmodel.ProductRequestViewModel" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        style="@style/loginCard"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/loginViewsMargin"
+        android:layout_marginBottom="@dimen/loginViewsMargin"
+        android:background="@color/white"
+        android:elevation="5dp"
+        app:cardCornerRadius="@dimen/loginCardRadius">
+
+
+        <LinearLayout
+            style="@style/linearParent"
+            android:layout_gravity="center"
+            android:padding="@dimen/loginViewsMargin">
+
+            <TextView
+                style="@style/headerTextPrimary"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:text="@string/request_product"
+                android:textColor="@color/colorAccent" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputEmail"
+                style="@style/parent"
+                android:layout_marginTop="@dimen/loginViewsMargin">
+
+                <EditText
+                    android:id="@+id/ed_category"
+                    style="@style/modifiedEditText"
+                    android:hint="@string/category_name"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:textSize="15dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputPassword"
+                style="@style/parent"
+                android:layout_marginTop="@dimen/loginViewsMargin">
+
+                <EditText
+                    android:id="@+id/ed_product"
+                    style="@style/modifiedEditText"
+                    android:hint="@string/product_name"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:textSize="15dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parent"
+                android:layout_marginTop="@dimen/loginViewsMargin">
+
+                <EditText
+                    android:id="@+id/ed_quanity"
+                    style="@style/modifiedEditText"
+                    android:hint="@string/quanity"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:textSize="15dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parent"
+                android:layout_marginTop="@dimen/loginViewsMargin">
+
+                <EditText
+                    android:id="@+id/ed_price"
+                    style="@style/modifiedEditText"
+                    android:hint="@string/price"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:textSize="15dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/parent"
+                android:layout_marginTop="@dimen/loginViewsMargin">
+
+                <EditText
+                    android:id="@+id/ed_amount"
+                    style="@style/modifiedEditText"
+                    android:hint="@string/product_amount"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:textSize="15dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/cirLoginButton"
+                style="@style/loginButton"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:onClick="@{()->productRequestViewModel.onMyButtonClicked()}"
+                android:text="@string/request" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>
